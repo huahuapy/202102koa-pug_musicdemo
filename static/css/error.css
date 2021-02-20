@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.error {
+  margin: 100px auto;
+  padding: 20px 0;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+
+h3 {
+  font-size: 22px;
+  padding: 0 0 10px 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+}

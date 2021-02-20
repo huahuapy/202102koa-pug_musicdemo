@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+}
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+}
+
+.changeColor {
+  width: 100px;
+  height: 25px;
+  background-color: rgb(61, 189, 116);
+  font-size: 14px;
+  color: #fff;
+}
+
+.songdesc {
+  margin: 50px auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pic img {
+  display: block;
+  border-radius: 50%;
+  width: 230px;
+}
+
+
+.singer-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+.singer-desc h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.singer-detail {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.singer-total {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.singer-total  span {
+  font-size: 22px;
+  padding: 0 10px 0 3px;
+}
+
+.singer-btns {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.singer-btns button {
+  width: 180px;
+  height: 38px;
+  margin-right: 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+}
+
+.singer-btns button:first-child {
+  background-color: rgb(61, 189, 116);
+  color: #fff;
+}
+
+.singer-btns button:last-child {
+  background-color: #fff;
+}
+
+
+.songs {
+  padding: 20px 30px 0 30px;
+}
+.songs .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+table {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+table tr {
+  display: flex;
+  width: 100%;
+}
+table th:nth-child(1), table td:nth-child(4n+1){
+  flex: 0 0 40px;
+}
+table th {
+  height: 60px;
+  flex: 1;
+  color: rgb(151, 150, 150);
+}
+table td {
+  height: 40px;
+  flex: 1;
+}
+
+table td:nth-child(4n+2) {
+  position: relative;
+}
+table td:nth-child(4n+2) .btns{
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  line-height: 40px;
+  display: none;
+}
+
+.play-btn ,.add-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.play-btn{
+  background: url('../img/play.jpg') no-repeat;
+  background-size: cover;
+  margin-right: 6px;
+}
+
+.add-btn{
+  background: url('../img/add.jpg') no-repeat;
+  background-size: cover;
+}

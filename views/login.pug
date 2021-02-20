@@ -1,0 +1,20 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='css/login.css')
+  title Document
+.loginContainer
+  h1 &#x767B;&#x5F55;
+  form(action='/checkUser', method='POST')
+    | &#x59D3;&#x540D;&#xFF1A;
+    input.inputStyle(type='text', name='username')
+    br
+    |       &#x5BC6;&#x7801;&#xFF1A;
+    input.inputStyle(type='password', name='pwd')
+    br
+    input.loginStyle(type='submit', value='登录')
+    |  |
+    input.remember(type='checkbox', name='rememberMe')
+    span &#x8BB0;&#x4F4F;&#x6211;

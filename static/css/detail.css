@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
+}
+
+button {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+
+.detailContainer {
+  padding: 100px 100px 30px 120px;
+  background-color: rgb(24, 21, 20);
+}
+
+.btns {
+  margin: 20px 0 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.delete-btn, .clearlist-btn {
+  width: 114px;
+  height: 35px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+
+ul.list {
+  padding: 5px 0 20px 40px;
+}
+
+
+ul.list li {
+  display: flex;
+  line-height: 30px;
+  height: 30px;
+  align-items: center;
+  color: #ddd;
+}
+li input {
+  flex: 0 0 10%;
+}
+li span {
+  flex: 1;
+  text-align: center;
+}

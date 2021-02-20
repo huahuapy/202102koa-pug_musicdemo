@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='css/list.css')
+    script(src="js/list.js" type="text/javascript")
+    title Document
+  body
+    button.changeColor 换肤
+    .songdesc
+      .pic
+        img(src='img/song1.jpg' alt='')
+      .singer-desc
+        h4.singer-name 薛之谦
+        p.singer-detail Joker Xue，1983年7月17日出生于上海，中国内地流行乐男歌手、影视演员、音乐制作人
+        .singer-total
+          | 单曲 
+          span 286
+          |         专辑 
+          span 15
+          |         MV 
+          span 262
+        .singer-btns
+          button 播放热门歌曲
+          button
+            | 关注
+            span 1316.4
+            | 万
+    .songs
+      h4.title 热门歌曲
+      table
+        tbody
+          tr
+            th  
+            th 歌曲
+            th 专辑
+            th 时长
+        each val,key in musicData
+          tr
+            td #{key+1}
+            td 
+              |#{val.songName} 
+              .btns
+                button.play-btn(onclick='showDetail('+JSON.stringify(val)+')')
+                button.add-btn(onclick='showDetail('+JSON.stringify(val)+')')
+            td #{val.album}
+            td #{val.time}
